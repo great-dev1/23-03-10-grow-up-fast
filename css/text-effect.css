@@ -11,7 +11,7 @@
 .text-effect h1 {
   transform: skew(0, -10deg);
   order: 2;
-  color: #fde9ff;
+  color: #dadfe7;
   font-weight: 900;
   text-transform: uppercase;
   /* font-size: clamp(3rem, 10vw, 6rem); */
@@ -29,12 +29,14 @@
   position: relative;
 }
 
-/* .text-effect span:before {
+.text-effect span:before {
     content: attr(data-text);
     position: absolute;
+    left: 0;
+    top: 0;
     text-shadow: 2px 2px 1px #e94aa1, -1px -1px 1px #c736f9, -2px 2px 1px #e94aa1, 1px -1px 1px #f736f9;
     z-index: 1;
-  } */
+  }
 .text-effect {
   scroll-snap-align: start;
   scroll-snap-stop: always;

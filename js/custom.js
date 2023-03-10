@@ -315,13 +315,16 @@
     let mouseY = 0;
     let book;
 
-    let width = window.innerWidth;
-    let height = window.innerHeight;
-    let cmYOffset = 1, cmXOffset = 0;
+    let width = window.innerWidth - 38;
+    let height = window.innerHeight - 353;
+    let cmYOffset = 0.5, cmXOffset = 0;
+    let bookScale = 1;
     if (width > 991) {
       width /= 2;
       cmYOffset =0.5;
       cmXOffset = 0.5;
+      bookScale = 1;
+      height = window.innerHeight;
     }
     console.log("width height", width, height)
     const scene = new THREE.Scene();
@@ -339,7 +342,8 @@
     console.log(loader)
     loader.load('assets/models/books_stack.gltf', function (gltf) {
       book = gltf.scene;  // book 3D object is loaded
-      book.scale.set(1, 1, 1);
+      book.scale.set(bookScale, bookScale, bookScale);
+      console.log("bookScale", bookScale);
       book.rotation.y = 1.7;
       // book.rotation.x = 0;
       scene.add(book);
@@ -367,22 +371,40 @@
     setInterval(() => {
       if (book) {
         book.rotation.y += 0.002;
-        console.log(book.rotation.y);
         // book.rotation.x += 0.01;
       }
       renderer.render(scene, camera);
     }, 10);
     animate();
 
-    function sortArray(array) {
-      clearTimeout(delay);
-      var delay = setTimeout(function () {
-        var firstElem = array.shift();
-        array.push(firstElem);
-        return startAnim(array);
-      }, 3000)
-    }
+    //text-effect
+    // let chaptersTop = 1;
+    // let chaptersScrollY;
+    // document.getElementById("te-container").style.overflow = "hidden";
 
+    // document.getElementById("te-container").addEventListener("scroll", e => {
+    //   console.log("te-scroll")
+    //   if(e.target.scrollTop ==)
+    // })
+
+    // window.addEventListener("scroll", (e) => {
+    //   const temp = document.getElementById("chapters").getBoundingClientRect().top;
+    //   if(chaptersTop == 0) {
+    //     chaptersTop = temp;
+    //     if(chaptersScrollY) {
+    //       window.scrollTo(0, chaptersScrollY)
+    //       document.getElementById("te-container").style.overflow = "auto";
+    //       document.getElementById("te-container").scrollTop = e.target.scrollTop;
+    //     }
+    //     return;
+    //   }
+    //   if((chaptersTop > 0 && temp <= 0) || (chaptersTop < 0 && temp >= 0)) {
+    //     chaptersScrollY = window.scrollY + temp;
+    //     chaptersTop = 0;
+    //     return;
+    //   }
+    //   chaptersTop = temp;
+    // })
 
   });
 

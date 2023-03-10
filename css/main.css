@@ -45,13 +45,19 @@ section {
 
 section#hero {
     background-color: #0B2449;
-    min-height: 100vh;
+    height: 100vh;
     border-bottom: 4px solid #8794A5;
 }
 
 section#hero .hero-text {
     color: #FAF7F8;
     font-size: 200%;
+}
+
+@media only screen and (max-width: 991px) {
+    section#hero .hero-text {
+        font-size: 170%;
+    }
 }
 
 footer {
@@ -83,6 +89,24 @@ footer p.copyright {
     background-color: #D6B6BA;
 }
 
-.mh-100 {
+#chapters {
+    height: 100vh;
+}
+
+#press {
+    text-align: center;
     min-height: 100px;
+}
+
+@media only screen and (max-width: 991px) {
+    #press {
+        min-height: 150px;
+    }
+    #hero {
+        padding-top: 80px;
+    }
+    #author .text-content {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
