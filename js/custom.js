@@ -370,11 +370,11 @@
     // });
     setInterval(() => {
       if (book) {
-        book.rotation.y += 0.002;
+        book.rotation.y += 0.001;
         // book.rotation.x += 0.01;
       }
       renderer.render(scene, camera);
-    }, 10);
+    }, 5);
     animate();
 
     //text-effect
