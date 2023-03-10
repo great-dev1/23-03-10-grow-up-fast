@@ -317,16 +317,19 @@
 
     let width = window.innerWidth;
     let height = window.innerHeight;
+    let cmYOffset = 1, cmXOffset = 0;
     if (width > 991) {
       width /= 2;
+      cmYOffset =0.5;
+      cmXOffset = 0.5;
     }
     console.log("width height", width, height)
     const scene = new THREE.Scene();
     // scene.background = null;
     const camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
     camera.position.z = 3;
-    camera.position.y = 0.5;
-    camera.position.x = 0.5;
+    camera.position.y = cmYOffset;
+    camera.position.x = cmXOffset;
 
     const renderer = new THREE.WebGLRenderer({ alpha: true });
     renderer.setSize(width, height);
