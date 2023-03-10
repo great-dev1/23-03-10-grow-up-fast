@@ -95,12 +95,15 @@ footer p.copyright {
 
 #press {
     text-align: center;
-    min-height: 100px;
+    min-height: 150px;
+    padding: 40px 0;
+}
+
+#te-container {
 }
 
 @media only screen and (max-width: 991px) {
     #press {
-        min-height: 150px;
     }
     #hero {
         padding-top: 80px;

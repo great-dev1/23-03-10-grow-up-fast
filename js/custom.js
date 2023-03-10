@@ -334,8 +334,9 @@
     camera.position.y = cmYOffset;
     camera.position.x = cmXOffset;
 
-    const renderer = new THREE.WebGLRenderer({ alpha: true });
+    const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
     renderer.setSize(width, height);
+    renderer.setPixelRatio(window.devicePixelRatio);
     document.getElementById('book_model').appendChild(renderer.domElement);
 
     const loader = new THREE.GLTFLoader()
@@ -343,9 +344,8 @@
     loader.load('assets/models/books_stack.gltf', function (gltf) {
       book = gltf.scene;  // book 3D object is loaded
       book.scale.set(bookScale, bookScale, bookScale);
-      console.log("bookScale", bookScale);
       book.rotation.y = 1.7;
-      // book.rotation.x = 0;
+      book.rotation.x = 0.1;
       scene.add(book);
     });
 
