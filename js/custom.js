@@ -337,7 +337,7 @@
     loader.load('assets/models/books_stack.gltf', function (gltf) {
       book = gltf.scene;  // book 3D object is loaded
       book.scale.set(1, 1, 1);
-      book.rotation.y = 1.5;
+      book.rotation.y = 1.7;
       // book.rotation.x = 0;
       scene.add(book);
     });
