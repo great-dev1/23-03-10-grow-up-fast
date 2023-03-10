@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grow Up Fast by Zach Rattner</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/swiper.min.css" />
+  <link rel="stylesheet" href="css/icofont.min.css" />
+  <link rel="stylesheet" href="css/odometer-theme-default.css" />
+  <link rel="stylesheet" href="css/glightbox.css" />
+  <link rel="stylesheet" href="css/margins-paddings.css" />
+  <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/text-effect.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js"
+    integrity="sha512-n8IpKWzDnBOcBhRlHirMZOUvEq2bLRMuJGjuVqbzUJwtTsgwOgK5aS0c1JA647XWYfqvXve8k3PtZdzpipFjgg=="
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/three@0.126.0/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+
+<body>
+  <div class="section-wrapper">
+    <div id="preLoader"></div>
+    <section id="hero" class="hero hero__padding overflow-hidden position-relative bg-one">
+      <div class="circle x1"></div>
+      <div class="circle x2"></div>
+      <div class="circle x3"></div>
+      <div class="circle x4"></div>
+      <div class="circle x5"></div>
+      <div class="center-content container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 m-0px-b md-m-30px-b">
+            <div class="hero__content position-relative">
+              <h2 class="hero-text mb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+                It's not unusual for ambitious projects start with self-doubt.
+              </h2>
+              <h2 class="hero-text mb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+                The most successful learn to manage the discomfort and</h2>
+              <h2 class="display-4 mb-4 text-capitalize fc-w" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-delay="650">
+                Grow Up Fast
+              </h2>
+              <div class="input-group m-flex-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="750">
+                <a class="button button__primary" id="subscribe-button" href="#order">
+                  <span>Order Your Copy Now</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+            <div id="book_model" class="hero__images text-center">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="what-you-will-learn" class="achieve section-padding">
+      <div class="container center-content">
+        <div class="row">
+          <div class="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
+            <div class="section-title-center text-center">
+              <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
+                Overview
+              </h1>
+              <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">What you&#39;ll learn</h3>
+              <div class="section-divider divider-traingle" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-delay="250"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row gx-5">
+          <div class="achieve__content">
+            <div class="row">
+              <div class="col-sm-6 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="achieve__content__item h-100 translateEffect2">
+                  <!-- <div class="achieve__icon m-20px-b">
+                    <i class="icofont-ebook"></i>
+                  </div> -->
+                  <p>How do you validate a product as fast as you can while risking as little money and time as you can?
+                  <p>
+                </div>
+              </div>
+              <div class="col-sm-6 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <div class="achieve__content__item h-100 translateEffect2">
+                  <!-- <div class="achieve__icon m-20px-b">
+                    <i class="icofont-dice-multiple"></i>
+                  </div> -->
+                  <p>What skills do you need to collaborate with others in an entrepreneurial environment?
+                  <p>
+                </div>
+              </div>
+              <div class="col-sm-6 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <div class="achieve__content__item h-100 translateEffect2">
+                  <!-- <div class="achieve__icon m-20px-b">
+                    <i class="icofont-goal"></i>
+                  </div> -->
+                  <p>How do you learn to take input from others, but make the final decision yourself?
+                  <p>
+                </div>
+              </div>
+              <div class="col-sm-6 mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                <div class="achieve__content__item h-100 translateEffect2">
+                  <!-- <div class="achieve__icon m-20px-b">
+                    <i class="icofont-brand-target"></i>
+                  </div> -->
+                  <p>When do you reach the point when you recognize you may be over your head and have to delegate?
+                  <p>
+                </div>
+              </div>
+              <div class="col-sm-6 mb-4 mb-sm-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                <div class="achieve__content__item h-100 translateEffect2">
+                  <!-- <div class="achieve__icon m-20px-b">
+                    <i class="icofont-brand-bmw"></i>
+                  </div> -->
+                  <p>How do you develop an inner circle you can trust?
+                  <p>
+                </div>
+              </div>
+              <div class="col-sm-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+                <div class="achieve__content__item h-100 translateEffect2">
+                  <!-- <div class="achieve__icon m-20px-b">
+                    <i class="icofont-brand-att"></i>
+                  </div> -->
+                  <p>Where do you find the right people to work with you on your startup?
+                  <p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="chapters" class="section-padding bg-one">
+      <div class="container center-content">
+        <div class="row">
+          <div class="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
+            <div class="section-title-center text-center">
+              <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
+                Chapters
+              </h1>
+              <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Chapters we've covered</h3>
+              <div class="section-divider divider-traingle" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-delay="250"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row gx-5">
+          <div class="col-lg-6 text-effect-container" data-aos="fade-left" data-aos-duration="1000"
+            data-aos-delay="200">
+            <div class="text-effect">
+              <h1><span data-text="test your assumptions">Test your assumptions</span></h1>
+            </div>
+            <div class="text-effect">
+              <h1><span data-text="feedback is dangerous">Feedback is dangerous</span></h1>
+            </div>
+            <div class="text-effect">
+              <h1><span data-text="constraints are beautiful">Constraints are beautiful</span></h1>
+            </div>
+            <div class="text-effect">
+              <h1><span data-text="harmony not homogeneity">Harmony not homogeneity</span></h1>
+            </div>
+            <div class="text-effect">
+              <h1><span data-text="make yourself uncomfortable">Make yourself uncomfortable</span></h1>
+            </div>
+            <div class="text-effect">
+              <h1><span data-text="manage uncertainly">Manage uncertainly</span></h1>
+            </div>
+            <div class="text-effect">
+              <h1><span data-text="empower others">Empower others</span></h1>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4 mb-lg-0 d-flex justify-content-center align-items-center" data-aos="fade-right"
+            data-aos-duration="1000" data-aos-delay="200">
+            <div id="trees"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="author" class="section-padding authorv2">
+      <div class="container center-content">
+        <div class="row">
+          <div class="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
+            <div class="section-title-center text-center">
+              <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">About author</h1>
+              <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                Learn about the book writer
+              </h3>
+              <div class="section-divider divider-traingle" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-delay="250"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row gx-5">
+          <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+            <div class="authorv2__image">
+              <img class="img-fluid" src="assets/images/achive.png" alt="Author Image" />
+              <a href="#" class="glightbox3 video-btn">
+                <i class="icofont-play"></i></a>
+              <div class="promo-video">
+                <div class="waves-block">
+                  <div class="waves wave-1"></div>
+                  <div class="waves wave-2"></div>
+                  <div class="waves wave-3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+            <h1>Zach Rattner</h1>
+            <p>Zach Rattner is co-founder and CEO of Silicon Valley-based Twilio, one of the world’s fastest growing
+              technology companies. A lifelong software developer, Jeff founded Twilio in 2008 with the belief that
+              empowering developers was key to unlocking innovation within nearly every kind of business. Millions of
+              software developers and hundreds of thousands of companies use Twilio’s platform to add communications to
+              the websites and apps you use daily.
+            </p>
+            <p>
+              Jeff is a serial entrepreneur having been the founder of Versity.com and NineStar, and founding CTO of
+              StubHub prior to Twilio, as well as one of the first product managers at Amazon Web Services.
+            </p>
+            <p>
+              He lives in San Francisco with his family and still makes time to hack on new software and hardware
+              projects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="order" class="section-padding pricing bg-one">
+      <div class="container center-content">
+        <div class="row">
+          <div class="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
+            <div class="section-title-center text-center">
+              <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">Order</h1>
+              <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                Grow Up Fast is available at these retailers
+              </h3>
+              <div class="section-divider divider-traingle" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-delay="250"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center justify-content-center">
+
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <div class="pricing__item translateEffect1">
+              <h3 class="pricing__title">Amazon</h3>
+              <a href="#" class="btn__secondary"><span>BUY NOW</span></a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+            <div class="pricing__item translateEffect1">
+              <h3 class="pricing__title">Apple Books</h3>
+              <a href="#" class="btn__secondary"><span>BUY NOW</span></a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            <div class="pricing__item translateEffect1">
+              <h3 class="pricing__title">Google Play</h3>
+              <a href="#" class="btn__secondary"><span>BUY NOW</span></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="section-padding testimonial">
+      <div class="container center-content">
+        <div class="row">
+          <div class="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
+            <div class="section-title-center text-center">
+              <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">Reviews</h1>
+              <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                What people said about my books
+              </h3>
+              <div class="section-divider divider-traingle" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-delay="250"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row testi-row">
+          <div class="col-12">
+            <div class="clients-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide p-5px-lr" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                  <div class="testi-card card h-100 translateEffect1">
+                    <div class="card-body p-4">
+                      <div class="testi-card__quotation">
+                        <i class="icofont-quote-right"></i>
+                      </div>
+                      <p class="my-4">
+                        " Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Dolor neque molestiae distinctio, voluptatum
+                        suscipit in, reiciendis, dolores enim optio corporis
+                        maxime impedit rerum iure illum quae iusto obcaecati
+                        quod laboriosam? "
+                      </p>
+                      <div class="testi-card__user-info pt-4">
+                        <div class="testimonial__user-info__image">
+                          <img src="assets/images/user-2.png" alt="User Image" />
+                        </div>
+                        <div class="testimonial__user-info__content">
+                          <h4 class="mb-0">Brightlight books</h4>
+                          <p class="mb-0">Ubold Customer</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide p-5px-lr" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                  <div class="testi-card card h-100 translateEffect1">
+                    <div class="card-body p-4">
+                      <div class="testi-card__quotation">
+                        <i class="icofont-quote-right"></i>
+                      </div>
+                      <p class="my-4">
+                        " Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Dolor neque molestiae distinctio, voluptatum
+                        suscipit in, reiciendis, dolores enim optio corporis
+                        maxime impedit rerum iure illum quae iusto obcaecati
+                        quod laboriosam? "
+                      </p>
+                      <div class="testi-card__user-info pt-4">
+                        <div class="testimonial__user-info__image">
+                          <img src="assets/images/user-1.png" alt="User Image" />
+                        </div>
+                        <div class="testimonial__user-info__content">
+                          <h4 class="mb-0">Brightlight books</h4>
+                          <p class="mb-0">Ubold Customer</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide p-5px-lr" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                  <div class="testi-card card h-100 translateEffect1">
+                    <div class="card-body p-4">
+                      <div class="testi-card__quotation">
+                        <i class="icofont-quote-right"></i>
+                      </div>
+                      <p class="my-4">
+                        " Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Dolor neque molestiae distinctio, voluptatum
+                        suscipit in, reiciendis, dolores enim optio corporis
+                        maxime impedit rerum iure illum quae iusto obcaecati
+                        quod laboriosam? "
+                      </p>
+                      <div class="testi-card__user-info pt-4">
+                        <div class="testimonial__user-info__image">
+                          <img src="assets/images/user-2.png" alt="User Image" />
+                        </div>
+                        <div class="testimonial__user-info__content">
+                          <h4 class="mb-0">Brightlight books</h4>
+                          <p class="mb-0">Ubold Customer</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide p-5px-lr" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                  <div class="testi-card card h-100 translateEffect1">
+                    <div class="card-body p-4">
+                      <div class="testi-card__quotation">
+                        <i class="icofont-quote-right"></i>
+                      </div>
+                      <p class="my-4">
+                        " Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Dolor neque molestiae distinctio, voluptatum
+                        suscipit in, reiciendis, dolores enim optio corporis
+                        maxime impedit rerum iure illum quae iusto obcaecati
+                        quod laboriosam? "
+                      </p>
+                      <div class="testi-card__user-info pt-4">
+                        <div class="testimonial__user-info__image">
+                          <img src="assets/images/user-1.png" alt="User Image" />
+                        </div>
+                        <div class="testimonial__user-info__content">
+                          <h4 class="mb-0">Brightlight books</h4>
+                          <p class="mb-0">Ubold Customer</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination m-30px-t"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="press" class="mh-100 bg-one">
+      <div class="center-content">
+        <h1>Press</h1>
+        <p>Have an inquiry? Get in touch at <a href="mailto:hello@growupfastbook.com">hello@growupfastbook.com</a>
+        </p>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <div class="center-content">
+      <p>
+        <a target="_blank" href="https://www.yembo.ai/legal/end-user-terms-of-use">Legal</a>
+        &bull;
+        <a target="_blank" href="https://yembo.ai">Yembo.ai</a>
+      </p>
+      <p class="copyright">
+        &copy; <span id="copyright-year"></span> Worthwhile Adventures LLC. All rights reserved.
+      </p>
+    </div>
+  </footer>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/onepageNav.js"></script>
+  <script src="js/jquery.ajaxchimp.min.js"></script>
+  <script src="js/glightbox.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/jquery.appear.min.js"></script>
+  <script src="js/odometer.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/gsap/1.19.1/TweenMax.min.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
