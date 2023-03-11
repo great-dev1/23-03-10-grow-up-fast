@@ -11,17 +11,13 @@
 .text-effect h1 {
   transform: skew(0, -10deg);
   order: 2;
-  color: #dadfe7;
+  color: #FAF7F8;
   font-weight: 900;
   text-transform: uppercase;
   /* font-size: clamp(3rem, 10vw, 6rem); */
   line-height: 0.75em;
   text-align: center;
-  text-shadow: 3px 1px 1px #4af7ff, 2px 2px 1px #165bfb, 4px 2px 1px #4af7ff,
-    3px 3px 1px #165bfb, 5px 3px 1px #4af7ff, 4px 4px 1px #165bfb,
-    6px 4px 1px #4af7ff, 5px 5px 1px #165bfb, 7px 5px 1px #4af7ff,
-    6px 6px 1px #165bfb, 8px 6px 1px #4af7ff, 7px 7px 1px #165bfb,
-    9px 7px 1px #4af7ff;
+  text-shadow: 3px 1px 1px #8794a5, 2px 2px 1px #0b2449, 4px 2px 1px #8794a5, 4px 3px 1px #0b2449, 5px 3px 1px #8794a5, 4px 4px 1px #0b2449, 6px 4px 1px #8794a5, 5px 5px 1px #0b2449, 7px 5px 1px #8794a5, 6px 6px 1px #0b2449, 8px 6px 1px #8794a5, 7px 7px 1px #0b2447, 9px 7px 1px #8794a5;
 }
 
 .text-effect span {
@@ -34,7 +30,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    text-shadow: 2px 2px 1px #e94aa1, -1px -1px 1px #c736f9, -2px 2px 1px #e94aa1, 1px -1px 1px #f736f9;
+    text-shadow: 2px 2px 1px #0b2449, -1px -1px 1px #8794a5, -2px 2px 1px #d6b6ba, 1px -1px 1px #faf7f8;
     z-index: 1;
   }
 .text-effect {
