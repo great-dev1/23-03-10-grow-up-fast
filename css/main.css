@@ -112,4 +112,21 @@ footer p.copyright {
         padding-left: 30px;
         padding-right: 30px;
     }
+    #chapters {
+        padding-bottom: 0px;
+    }
+    #chapters .center-content {
+        height: 100%;
+        position: relative;
+    }
+    #chapters-content {
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding-top: 15vh;
+    }
+    .text-effect span {
+        font-size: 35px;
+    }
 }
